@@ -34,14 +34,14 @@ function App() {
         <Header toggleLogin={toggleLogin} />
 
         <Switch>
-          <Route path="/addlisting">
+          <Route path="/guestRoomBookingApp/addlisting">
             <AddListing />
           </Route>
           <Route path="/room/:id" component={GuestRoom} />
           <Route path="/editListing/:id" component={AddListing} />
           <Route path="/yourrooms/" component={YourRooms} />
 
-          <Route path="/">
+          <Route path="/guestRoomBookingApp/">
             <div id="Appcontainer">
               <Cards />
               {isHost ? (

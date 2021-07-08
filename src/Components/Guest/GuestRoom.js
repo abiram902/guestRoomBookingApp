@@ -50,7 +50,7 @@ function GuestRoom(props) {
       };
 
       dispatch(bookRoom(dispatchItem));
-      history.push("/");
+      history.push("/guestRoomBookingApp/");
     }
   };
   return (

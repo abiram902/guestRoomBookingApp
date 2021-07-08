@@ -66,6 +66,9 @@
   color: red;
   font-size: 10px;
 }
+.availability {
+  width: 100%;
+}
 
 @media (max-width: 850px) {
   .jumbotron {

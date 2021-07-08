@@ -6,7 +6,8 @@ import { useState } from "react";
 function DateAvailability(props) {
   const [dateErr, setDateErr] = useState("");
   const [count, setCount] = useState(0); // keep track of no of booking on a given date
-
+  const [fromDateTouched, setFromDateTouched] = useState(false);
+  const [toDateTouched, settoDateTouched] = useState(false);
   /*a host can list upto 5 rooms in a listing and guests can book all the five rooms in the same date one at a time. if the no of bookings 
 in a day go beyond no of rooms listed then the form turns invalid with apropriate message */
 
@@ -66,6 +67,11 @@ in a day go beyond no of rooms listed then the form turns invalid with apropriat
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    if (name === "startDate") {
+      setFromDateTouched(true);
+    } else {
+      settoDateTouched(true);
+    }
 
     props.setDate((prev) => ({
       ...prev,
@@ -84,7 +90,11 @@ in a day go beyond no of rooms listed then the form turns invalid with apropriat
           value={props.date.startDate}
           onChange={handleChange}
           className={
-            props.isValid ? styles["validdate"] : styles["invaliddate"]
+            props.isValid && fromDateTouched
+              ? styles["validdate"]
+              : !props.isValid && fromDateTouched
+              ? styles["invaliddate"]
+              : styles.dateinput
           }
         />
       </label>
@@ -97,7 +107,11 @@ in a day go beyond no of rooms listed then the form turns invalid with apropriat
           value={props.date.endDate}
           onChange={handleChange}
           className={
-            props.isValid ? styles["validdate"] : styles["invaliddate"]
+            props.isValid && toDateTouched
+              ? styles["validdate"]
+              : !props.isValid && toDateTouched
+              ? styles["invaliddate"]
+              : styles.dateinput
           }
         />
       </label>

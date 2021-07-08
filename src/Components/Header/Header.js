@@ -12,7 +12,7 @@ function Header(props) {
     <div id="header">
       <div className="header-title">
         <Link
-          to="/guestRoomBookingApp"
+          to="/guestRoomBookingApp/"
           style={{
             textDecoration: "none",
             color: "white",

@@ -89,12 +89,6 @@
   height: 100%;
 }
 
-@media (max-width: 650px) {
-  .card,
-  .card-long {
-    width: 95%;
-  }
-}
 @media (max-width: 1150px) {
   .card-long {
     width: 45%;
@@ -112,5 +106,12 @@
   .card {
     width: 75%;
     margin: 20px auto;
+  }
+}
+@media (max-width: 650px) {
+  .card,
+  .card-long {
+    width: 100%;
+    margin: 10px 0;
   }
 }

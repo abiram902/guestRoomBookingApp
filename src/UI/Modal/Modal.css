@@ -8,6 +8,7 @@
   z-index: 20;
 }
 .modal-overlay {
+  min-width: 300px;
   position: absolute;
   left: 35vw;
   top: 10vh;
@@ -16,4 +17,31 @@
   z-index: 50;
   background-color: white;
   border-radius: 15px;
+}
+@media (max-width: 700px) {
+  .modal-overlay {
+    left: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .modal-overlay {
+    left: 20%;
+  }
+}
+@media (max-width: 400px) {
+  .modal-overlay {
+    left: 10%;
+  }
+}
+
+@media (max-width: 350px) {
+  .modal-overlay {
+    left: 5%;
+  }
+}
+@media (max-width: 300px) {
+  .modal-overlay {
+    width: 100%;
+    left: 0;
+  }
 }

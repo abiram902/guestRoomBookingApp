@@ -18,7 +18,7 @@ function Logout(props) {
   const handleLogout = () => {
     dispatch(logout());
     props.toggleLogin();
-    history.push("/");
+    history.push("/guestRoomBookingApp/");
   };
   return (
     <Modal toggleLogin={props.toggleLogin}>

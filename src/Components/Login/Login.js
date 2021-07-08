@@ -8,8 +8,11 @@ function Login(props) {
   const [isHost, setIsHost] = useState(true);
   const [emailInput, setEmailInput] = useState("");
   const [passwordInput, setPasswordInput] = useState("");
-  const [emailValidity, setEmailValidity] = useState(null);
-  const [passwordValidity, setPasswordValidity] = useState(null);
+  const [emailValidity, setEmailValidity] = useState(false);
+  const [passwordValidity, setPasswordValidity] = useState(false);
+  const [errMsg, setErrMsg] = useState("");
+  const [isEmailTouched, setIsEmailTouched] = useState(false);
+  const [isPasswordTouched, setIsPasswordTouched] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -29,6 +32,10 @@ function Login(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!emailValidity || !passwordValidity) {
+      setErrMsg("invalid login credentials");
+      return;
+    }
     props.toggleLogin();
 
     let item = {
@@ -60,8 +67,12 @@ function Login(props) {
 
         <form className={styles["login-form"]} onSubmit={handleSubmit}>
           <label
-            className={`${styles["customField"]} ${
-              emailValidity === false ? styles["invalid"] : "valid"
+            className={`${styles.customField} ${
+              !emailValidity && isEmailTouched
+                ? styles["invalid"]
+                : emailValidity
+                ? "valid"
+                : styles.customField
             }`}
           >
             <input
@@ -69,13 +80,20 @@ function Login(props) {
               name="email"
               required
               value={emailInput}
-              onChange={(e) => setEmailInput(e.target.value)}
+              onChange={(e) => {
+                setIsEmailTouched(true);
+                setEmailInput(e.target.value);
+              }}
             />
             <span className={styles["placeHolder"]}>Email</span>
           </label>
           <label
-            className={`${styles["customField"]} ${
-              passwordValidity === false ? styles["invalid"] : "valid"
+            className={`${styles.customField} ${
+              !passwordValidity && isPasswordTouched
+                ? styles["invalid"]
+                : passwordValidity
+                ? "valid"
+                : styles.customField
             }`}
           >
             <input
@@ -83,10 +101,14 @@ function Login(props) {
               name="phoneNumber"
               required
               value={passwordInput}
-              onChange={(e) => setPasswordInput(e.target.value)}
+              onChange={(e) => {
+                setIsEmailTouched(true);
+                setPasswordInput(e.target.value);
+              }}
             />
             <span className={styles["placeHolder"]}>Phone number</span>
           </label>
+          {errMsg}
           <input
             type="submit"
             value="LogIn"

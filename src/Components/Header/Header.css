@@ -32,9 +32,7 @@
   border-radius: 25px;
   font-family: "Pacifico", cursive;
 }
-.header-search {
-  justify-content: flex-end;
-}
+
 .header-email {
   font-family: "Pacifico", cursive;
   font-size: 30px;
@@ -57,5 +55,20 @@
   #header {
     flex-wrap: wrap;
     height: fit-content;
+  }
+  .header-title,
+  .header-title {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
+@media (max-width: 354px) {
+  .header-email {
+    max-width: 30%;
+    font-size: 15px;
+  }
+  .header-avatar {
+    padding: 5px 10px;
+    font-size: 15px;
   }
 }
