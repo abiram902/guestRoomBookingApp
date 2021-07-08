@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/guestRoomBookingApp/static/css/main.ffaf2bbc.chunk.css",
-    "main.js": "/guestRoomBookingApp/static/js/main.11df0c57.chunk.js",
-    "main.js.map": "/guestRoomBookingApp/static/js/main.11df0c57.chunk.js.map",
+    "main.css": "/guestRoomBookingApp/static/css/main.c4f1147b.chunk.css",
+    "main.js": "/guestRoomBookingApp/static/js/main.ccdd23b6.chunk.js",
+    "main.js.map": "/guestRoomBookingApp/static/js/main.ccdd23b6.chunk.js.map",
     "runtime-main.js": "/guestRoomBookingApp/static/js/runtime-main.6ee7456b.js",
     "runtime-main.js.map": "/guestRoomBookingApp/static/js/runtime-main.6ee7456b.js.map",
-    "static/js/2.eb34df79.chunk.js": "/guestRoomBookingApp/static/js/2.eb34df79.chunk.js",
-    "static/js/2.eb34df79.chunk.js.map": "/guestRoomBookingApp/static/js/2.eb34df79.chunk.js.map",
+    "static/js/2.9897b0c3.chunk.js": "/guestRoomBookingApp/static/js/2.9897b0c3.chunk.js",
+    "static/js/2.9897b0c3.chunk.js.map": "/guestRoomBookingApp/static/js/2.9897b0c3.chunk.js.map",
     "index.html": "/guestRoomBookingApp/index.html",
-    "static/css/main.ffaf2bbc.chunk.css.map": "/guestRoomBookingApp/static/css/main.ffaf2bbc.chunk.css.map",
-    "static/js/2.eb34df79.chunk.js.LICENSE.txt": "/guestRoomBookingApp/static/js/2.eb34df79.chunk.js.LICENSE.txt",
+    "static/css/main.c4f1147b.chunk.css.map": "/guestRoomBookingApp/static/css/main.c4f1147b.chunk.css.map",
+    "static/js/2.9897b0c3.chunk.js.LICENSE.txt": "/guestRoomBookingApp/static/js/2.9897b0c3.chunk.js.LICENSE.txt",
     "static/media/GuestRoom.module.css": "/guestRoomBookingApp/static/media/vine.f742e7c6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6ee7456b.js",
-    "static/js/2.eb34df79.chunk.js",
-    "static/css/main.ffaf2bbc.chunk.css",
-    "static/js/main.11df0c57.chunk.js"
+    "static/js/2.9897b0c3.chunk.js",
+    "static/css/main.c4f1147b.chunk.css",
+    "static/js/main.ccdd23b6.chunk.js"
   ]
 }
