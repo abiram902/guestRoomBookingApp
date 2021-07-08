@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/guestRoomBookingApp/static/css/main.c4f1147b.chunk.css",
-    "main.js": "/guestRoomBookingApp/static/js/main.ccdd23b6.chunk.js",
-    "main.js.map": "/guestRoomBookingApp/static/js/main.ccdd23b6.chunk.js.map",
+    "main.js": "/guestRoomBookingApp/static/js/main.9fa38b70.chunk.js",
+    "main.js.map": "/guestRoomBookingApp/static/js/main.9fa38b70.chunk.js.map",
     "runtime-main.js": "/guestRoomBookingApp/static/js/runtime-main.6ee7456b.js",
     "runtime-main.js.map": "/guestRoomBookingApp/static/js/runtime-main.6ee7456b.js.map",
     "static/js/2.9897b0c3.chunk.js": "/guestRoomBookingApp/static/js/2.9897b0c3.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.6ee7456b.js",
     "static/js/2.9897b0c3.chunk.js",
     "static/css/main.c4f1147b.chunk.css",
-    "static/js/main.ccdd23b6.chunk.js"
+    "static/js/main.9fa38b70.chunk.js"
   ]
 }
