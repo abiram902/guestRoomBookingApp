@@ -1,0 +1,26 @@
+.footer {
+  height: 100%;
+  width: 100vw;
+  background-color: whitesmoke;
+  display: flex;
+  margin-top: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-top: 8px solid #3db54a;
+  flex-wrap: wrap;
+}
+.contactdetails {
+  list-style: none;
+}
+.contact {
+  margin: 50px 100px;
+  min-width: 200px;
+}
+.contact > h3 {
+  color: #3db54a;
+}
+.highlight {
+  color: #3db54a;
+  font-weight: 800;
+  border-bottom: 1px solid black;
+}

@@ -1,0 +1,19 @@
+.backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(48, 48, 48, 0.2);
+  z-index: 20;
+}
+.modal-overlay {
+  position: absolute;
+  left: 35vw;
+  top: 10vh;
+  width: 30vw;
+  height: 55vh;
+  z-index: 50;
+  background-color: white;
+  border-radius: 15px;
+}

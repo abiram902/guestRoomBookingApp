@@ -1,0 +1,9 @@
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+}
+.location > img {
+  margin-right: 5px;
+}

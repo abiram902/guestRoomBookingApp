@@ -1,0 +1,116 @@
+.card {
+  width: 31.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-color: whitesmoke;
+  border: 1px solid #74d874;
+  border-radius: 15px;
+  margin: 20px 1%;
+  position: relative;
+}
+.card > p {
+  margin-bottom: 10px;
+}
+.card-long {
+  width: 31.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: whitesmoke;
+  border: 1px solid #74d874;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 20px;
+}
+.card-image-container {
+  margin-bottom: 10px;
+  width: 90%;
+  height: 45%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid #74d874;
+}
+.card-desc {
+  text-align: left;
+  margin-bottom: 10px;
+  width: 90%;
+  border-bottom: 1px solid #74d874;
+  cursor: pointer;
+}
+.card-price {
+  text-align: left;
+  width: 90%;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.card-aminities {
+  text-align: left;
+  width: 90%;
+  height: 15%;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.warn {
+  color: red;
+  font-size: 10px;
+}
+
+.current-user-bookings {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.current-user-bookings > ul > li {
+  list-style: none;
+}
+.card-booked-date {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#card-image {
+  height: 100%;
+}
+
+@media (max-width: 650px) {
+  .card,
+  .card-long {
+    width: 95%;
+  }
+}
+@media (max-width: 1150px) {
+  .card-long {
+    width: 45%;
+  }
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 750px) {
+  .card-long {
+    width: 75%;
+    margin: 20px auto;
+  }
+  .card {
+    width: 75%;
+    margin: 20px auto;
+  }
+}

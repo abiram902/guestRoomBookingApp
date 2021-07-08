@@ -1,0 +1,107 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  width: 100%;
+}
+.customField {
+  position: relative;
+  font-size: 14px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  width: 80%;
+  display: flex;
+}
+
+.customField input {
+  outline: none;
+  appearance: none;
+  font-size: 14px;
+  padding: 12px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  width: 100%;
+  border-color: #3db54a;
+}
+.invalid input {
+  border-color: orangered;
+}
+
+.customField .placeHolder {
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  background-color: white;
+  font-weight: 600;
+  transform: translateY(50%);
+}
+
+.submit-button {
+  width: 80%;
+  height: 30px;
+  margin-top: 20px;
+  background: linear-gradient(
+    to right,
+    #3db54a 0%,
+    #2dd3aa 100%,
+    #2dd3aa 100%,
+    #2dd3aa 100%
+  );
+  border-radius: 5px;
+  color: white;
+  appearance: none;
+  border: none;
+}
+.submit-button:hover {
+  border: 3px solid green;
+}
+
+.mode-select {
+  display: flex;
+  margin: 50px auto;
+}
+
+.mode-select .left,
+.mode-select .right {
+  border: 1px solid green;
+  width: 50%;
+  padding: 5px 10px;
+}
+.left {
+  border-radius: 15px 0 0 15px;
+  cursor: pointer;
+}
+.right {
+  border-radius: 0 15px 15px 0;
+}
+.left:hover,
+.right:hover {
+  background: linear-gradient(
+    to right,
+    #3db54a 0%,
+    #2dd3aa 100%,
+    #2dd3aa 100%,
+    #2dd3aa 100%
+  );
+  color: white;
+  border: none;
+}
+.btnActive {
+  background: linear-gradient(
+    to right,
+    #3db54a 0%,
+    #2dd3aa 100%,
+    #2dd3aa 100%,
+    #2dd3aa 100%
+  );
+  color: white;
+  border: none;
+}

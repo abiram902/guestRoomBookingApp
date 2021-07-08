@@ -1,0 +1,11 @@
+.cards-container {
+  width: 80%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px 10px rgba(40, 40, 40, 0.1);
+  margin: 100px auto 200px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: white;
+}

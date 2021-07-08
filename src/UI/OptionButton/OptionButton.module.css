@@ -1,0 +1,46 @@
+.option-container {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.option-container > button {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+}
+.option-container > button > img {
+  height: 100%;
+}
+.dropdown {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100px;
+  border-radius: 5px;
+  left: -70px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  cursor: pointer;
+  z-index: 112;
+}
+.dropdown > p {
+  padding: 5px 10px;
+  border-bottom: 1px solid black;
+}
+.dropdown > p:hover {
+  background: linear-gradient(
+    to right,
+    #3db54a 0%,
+    #2dd3aa 100%,
+    #2dd3aa 100%,
+    #2dd3aa 100%
+  );
+  color: white;
+}

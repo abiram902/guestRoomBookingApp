@@ -1,0 +1,24 @@
+.validdate {
+  border: 2px solid greenyellow;
+  padding: 5px;
+  width: 100%;
+}
+.invaliddate {
+  padding: 5px;
+  border: 2px solid red;
+  width: 100%;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.label {
+  width: 50%;
+}

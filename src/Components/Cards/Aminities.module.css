@@ -1,0 +1,13 @@
+.aminities {
+  display: flex;
+  flex-wrap: wrap;
+}
+.each-aminities {
+  background-color: #3db54a;
+  border-radius: 10px;
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}

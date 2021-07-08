@@ -1,0 +1,94 @@
+.addlisting-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.customField {
+  position: relative;
+  font-size: 14px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  width: 80%;
+}
+
+.customField input {
+  outline: none;
+  appearance: none;
+  font-size: 14px;
+  padding: 12px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  width: 100%;
+  border-color: #3db54a;
+}
+
+.customField .placeHolder {
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  background-color: white;
+  font-weight: 600;
+  transform: translateY(50%);
+}
+
+.minmax {
+  position: relative;
+  font-size: 14px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitbtn {
+  background: linear-gradient(
+    to right,
+    #3db54a 0%,
+    #2dd3aa 100%,
+    #2dd3aa 100%,
+    #2dd3aa 100%
+  );
+  align-items: center;
+  padding: 10px;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  border: 1px solid green;
+}
+.submitbtn:hover {
+  border: 1px solid orangered;
+}
+.addlisting-title {
+  margin: 30px auto;
+  text-align: center;
+  color: #3db54a;
+}
+.uploadedimg {
+  width: 80%;
+  height: 20vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: #f2f2f2;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.uploadedimg > img {
+  height: 90%;
+}
+.errmsg {
+  color: red;
+}
+.clicktoremove {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0 20px;
+  border-radius: 8px;
+}

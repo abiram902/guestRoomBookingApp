@@ -1,0 +1,52 @@
+.coursel {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.coursel > img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.rightarrow {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  border: 1px solid white;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5em;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+.leftarrow {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  border: 1px solid white;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5em;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.leftarrow:hover,
+.rightarrow:hover {
+  box-shadow: 0 5px 5px rgba(50, 50, 50, 0.5);
+}
